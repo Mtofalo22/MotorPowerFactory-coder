@@ -1,0 +1,391 @@
+header {
+    background-color: #aaaaa6;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+body {
+    background-color: #fcfcfc;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**footer**/
+
+footer {
+    background-color: #aaaaa6;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 200px 350px 1.5fr 260px;
+    grid-template-rows: 1fr 13%;
+    grid-template-areas:
+        "nredes direc contact hora"
+        "volverarriba volverarriba volverarriba volverarriba";
+    text-align: left;
+    justify-content: center;
+}
+
+.nredes {
+    grid-area: nredes;
+
+}
+
+.direc {
+    grid-area: direc;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.hora {
+    grid-area: hora;
+
+}
+
+.volverarriba {
+    grid-area: volverarriba;
+    text-align: center;
+}
+
+
+.footertittles {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+}
+
+.iconface,
+.iconig,
+.iconwpp,
+.telfijo {
+    height: 20px;
+    width: 20px;
+}
+
+.mecanica,
+.suspension,
+.frenos,
+.radiadores,
+.luces {
+
+    height: 200px;
+    width: 250px;
+}
+
+.accycomp {
+    height: 200px;
+    width: 265px;
+}
+
+.admision,
+.led,
+.disco {
+
+    height: 200px;
+    width: 200px;
+}
+
+.logoprinc {
+    height: 100px;
+}
+
+main {
+    text-align: center;
+}
+
+/***Titulos***/
+
+header div {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    padding-left: 10px;
+    padding-right: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.titulosportada {
+    padding-right: 400px;
+}
+
+
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.borderlist {
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 0px black;
+}
+
+/***fondo***/
+
+main div section {
+    background-image: url(../Images/Vento.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    background-position: right;
+    margin-bottom: 100px;
+}
+
+/**Navegador**/
+
+header nav ul li {
+
+    display: inline-block;
+    margin: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/** main **/
+
+#portada {
+    padding-right: 400px;
+}
+
+#portada1 {
+    padding-top: 0;
+    font-size: 2rem;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+main section p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.elboton {
+    text-align: center;
+    padding-right: 400px;
+
+
+}
+
+.boton {
+    background-color: orange;
+
+    block-size: 60px;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.botonel {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+
+/**productos**/
+
+section ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.listaproductos {
+    padding-right: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tituloproduct {
+    padding-right: 400px;
+}
+
+/**Preguntas y respuestas**/
+
+.pyr {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulopreguntas {
+    padding-right: 400px;
+}
+
+
+#listapyr {
+    font-size: 1.5rem;
+
+}
+
+/**contacto**/
+
+.portada2 {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 400px;
+}
+
+.titulocontacto {
+
+    padding-right: 400px;
+}
+
+.mail {
+    width: 185px
+}
+
+/**Nosotros**/
+
+.portada3 {
+    padding-right: 400px;
+}
+
+
+/*tablet 1000px*/
+
+@media screen and (max-width: 1000px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #portada {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 210px;
+        grid-template-areas:
+            "nredes hora"
+            "volverarriba volverarriba";
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact,
+    .direc {
+        content-visibility: hidden;
+    }
+
+    #titulosportada {
+        padding-left: 0px;
+    }
+}
+
+/*Movil 425px*/
+
+@media screen and (max-width: 452px) {
+
+    nav ul {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulosportada {
+        content-visibility: hidden;
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 300px;
+    }
+
+    .tituloproduct,
+    .portada2,
+    .portada3,
+    .pyr,
+    .listaproductos,
+    .titulopreguntas,
+    .titulocontacto,
+    .contactosec,
+    .sectionpyr {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        background-image: none;
+
+    }
+
+    main div section {
+        padding-top: 0px;
+    }
+
+    #portada1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vh;
+        margin-bottom: 20px;
+    }
+
+    #portada,
+    .elboton {
+        content-visibility: hidden;
+    }
+}
