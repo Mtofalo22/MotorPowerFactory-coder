@@ -109,6 +109,7 @@ main {
     text-align: center;
 }
 
+
 /***Titulos***/
 
 header div {
@@ -170,6 +171,8 @@ header nav ul li {
 header nav ul {
     list-style-type: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
     text-align: center;
 
 }
