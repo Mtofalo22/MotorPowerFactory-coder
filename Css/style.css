@@ -20,7 +20,7 @@ footer {
     padding-left: 100px;
     padding-right: 100px;
     display: grid;
-    grid-template-columns: 200px 350px 1.5fr 260px;
+    grid-template-columns: 300px 350px 1fr 300px;
     grid-template-rows: 1fr 13%;
     grid-template-areas:
         "nredes direc contact hora"
