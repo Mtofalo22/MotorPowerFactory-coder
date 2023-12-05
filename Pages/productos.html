@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="icon" type="image" href="../Images/LogoPage.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/style.css">
 
 </head>
 
 <body>
     <header id="inicio">
-        <img class="logoprinc" src="../Images/LogoPage.jpg" title="MotorPowerFactory" alt="LogoPage">
-        <div>
-            <h1>MotorPowerFactory</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li> <a href="#">Productos</a></li>
-                <li> <a href="nosotros.html">Nosotros</a></li>
-                <li> <a href="q&f.html">Q&F</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar bg-body-secondary fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <img class="logoprinc" src="../Images/LogoPage.jpg" title="MotorPowerFactory" alt="LogoPage">
+                <a class="navbar-brand" href="#">MotorPowerFactory</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="q&f.html">Q&F</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
-
-        <br>
     </header>
 
     <main>
@@ -58,34 +78,56 @@
             </section>
         </div>
         <hr>
+
         <section>
-            <h2>Recomendados</h2>
-            <div>
-                <ul>
-                    <li class="borderlist"><img class="admision" title="Filtro Largo Conico Vw Golf"
-                            src="../Images/Productos novedades/D_NQ_NP_889126-MLA54331661077_032023-O.webp"
-                            alt="Filtro conico">
-                        <p>Filtro admisión directa Golf GTI</p>
-                    </li>
-                    <li class="borderlist"><img class="led" title="Cree led 9006"
-                            src="../Images/Productos novedades/cree led.png" alt="Cree led">
-                        <p>Cree led 9006</p>
-                    </li>
-                    <li class="borderlist"><img class="disco" title="Discos de freno deportivos Audi"
-                            src="../Images/Productos novedades/frenos.png" alt="Discos de Freno">
-                        <p>Discos ventilados Audi Rs3</p>
-                    </li>
-                </ul>
+            <h3>Recomendados</h3>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Images/Productos novedades/D_NQ_NP_889126-MLA54331661077_032023-O.webp"
+                            class="d-block w-100 admision" alt="Filtro conico">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Admisión directa Golf GTI</h5>
+                            <p>Categoría: Accesorios y competición</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Images/Productos novedades/cree led.png" class="d-block w-100 led" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cree led 9006</h5>
+                            <p>Categoría: Sistema de iluminación</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Images/Productos novedades/frenos.png" class="d-block w-100 disco" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Discos ventilados Audi Rs3</h5>
+                            <p>Categoría: Sistema de frenos</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
-
     </main>
-
-
-
-
-    <hr>
     <footer>
         <div class="nredes">
             <p class="footertittles">Nuestras redes</p>
@@ -102,16 +144,20 @@
             <p class="footertittles">Dirección</p>
 
             <p>Av. Bartolomé Mitre 1050, Avellaneda, <br> Provicia de Buenos Aires.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6563.274022584695!2d-58.361709!3d-34.663869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334f0b0572f3%3A0x42c0a2e09c1674c!2sAv.%20Bartolom%C3%A9%20Mitre%201050%2C%20B1870AAK%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700349594874!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6563.274022584695!2d-58.361709!3d-34.663869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3334f0b0572f3%3A0x42c0a2e09c1674c!2sAv.%20Bartolom%C3%A9%20Mitre%201050%2C%20B1870AAK%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700349594874!5m2!1ses-419!2sar"
+                width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact">
             <p class="footertittles">Contacto</p>
             <span>E-Mail: info.motorpower.factory@gmail.com</span>
             <br>
             <span><a href="https://web.whatsapp.com/" target="_blank"><img class="iconwpp" title="WhatsApp"
-                src="../Images/Whatsapp.png" alt="WhatsApp"></a></li>+54 011 7777 8888</span>
+                        src="../Images/Whatsapp.png" alt="WhatsApp"></a></li>+54 011 7777 8888</span>
             <br>
-            <img class="telfijo" src="../Images/tel.png" alt="Telefono fijo" title="Telefono fijo"><span>+54 011 8888 7777</span>
+            <img class="telfijo" src="../Images/tel.png" alt="Telefono fijo" title="Telefono fijo"><span>+54 011 8888
+                7777</span>
         </div>
         <div class="hora">
             <ul>
@@ -129,6 +175,9 @@
             <p>Todos los derechos reservados <a href="#inicio">Volver a arriba</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
