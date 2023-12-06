@@ -57,6 +57,8 @@ footer {
     font-weight: 600;
 }
 
+
+
 ul {
     padding-inline-start: 0px;
 }
@@ -79,16 +81,13 @@ ul li {
 .suspension,
 .frenos,
 .radiadores,
-.luces {
+.luces,
+.accycomp {
 
     height: 200px;
     width: 250px;
 }
 
-.accycomp {
-    height: 200px;
-    width: 265px;
-}
 
 .logoprinc {
     height: 100px;
@@ -119,7 +118,9 @@ main {
     width: 200px;
 }
 
-.button {color: black;}
+.button {
+    color: black;
+}
 
 
 /***Titulos***/
@@ -161,12 +162,14 @@ a {
 .borderlist {
     border-radius: 10px;
     box-shadow: 3px 2px 5px 0px black;
+    font-style: oblique;
+    font-weight: 600;
 }
 
 /***fondo***/
 
 main div section {
-    background-image: url(../Images/Vento.jpg);
+    background-image: url(../images/vento.jpg);
     background-repeat: no-repeat;
     background-size: 400px 300px;
     background-position: right;
@@ -231,6 +234,7 @@ section ul li {
 }
 
 .listaproductos {
+    padding-left: 50px;
     padding-right: 400px;
     display: flex;
     flex-wrap: wrap;
@@ -249,6 +253,7 @@ section ul li {
     flex-direction: column;
     padding-right: 400px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
 }
 
 .titulopreguntas {
@@ -285,6 +290,7 @@ section ul li {
 
 .portada3 {
     padding-right: 400px;
+    padding-left: 50px;
 }
 
 
@@ -296,6 +302,10 @@ section ul li {
     h1 {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    h2 {
+        font-size: 3rem
     }
 
     #portada {
@@ -382,6 +392,9 @@ section ul li {
 
 @media screen and (max-width: 425px) {
 
+    h2 {
+        font-size: 2.5rem;
+    }
 
     .titulosportada {
         content-visibility: hidden;
@@ -399,8 +412,8 @@ section ul li {
     .titulocontacto,
     .contactosec,
     .sectionpyr {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -408,6 +421,10 @@ section ul li {
         align-items: center;
         background-image: none;
 
+    }
+
+    .titulopreguntas {
+        font-size: 2rem;
     }
 
     main div section {
@@ -445,4 +462,6 @@ section ul li {
         height: 500px;
         width: 200px;
     }
+
+
 }
