@@ -2,7 +2,10 @@ header {
     padding-top: 150px;
 }
 
-
+.navbar-brand {
+    font-size: 30px;
+    padding-left: 10px;
+}
 
 body {
     background-color: #fcfcfc;
@@ -118,9 +121,6 @@ main {
     width: 200px;
 }
 
-.button {
-    color: black;
-}
 
 
 /***Titulos***/
@@ -164,6 +164,7 @@ a {
     box-shadow: 3px 2px 5px 0px black;
     font-style: oblique;
     font-weight: 600;
+    text-align: center;
 }
 
 /***fondo***/
