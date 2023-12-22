@@ -1,0 +1,65 @@
+
+$color-primario: #aaaaa6;
+
+footer {
+    background-color: $color-primario;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 200px 400px 1.5fr 200px;
+    grid-template-rows: 1fr 13%;
+    grid-template-areas:
+        "nredes direc contact hora"
+        "volverarriba volverarriba volverarriba volverarriba";
+    text-align: left;
+    justify-content: center;
+}
+
+.footertittles {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+ul {
+    padding-inline-start: 0px;
+
+    li {
+        list-style-type: none;
+        display: inline;
+        margin: 5px;
+    }
+}
+
+
+
+.iconface,
+.iconig,
+.iconwpp,
+.telfijo {
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 210px;
+        grid-template-areas:
+            "nredes hora"
+            "volverarriba volverarriba";
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact,
+    .direc {
+        content-visibility: hidden;
+    }
+}

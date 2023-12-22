@@ -1,0 +1,449 @@
+header {
+    padding-top: 150px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+body {
+    background-color: #fcfcfc;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**footer**/
+
+footer {
+    background-color: #aaaaa6;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: 200px 350px 1.5fr 260px;
+    grid-template-rows: 1fr 13%;
+    grid-template-areas:
+        "nredes direc contact hora"
+        "volverarriba volverarriba volverarriba volverarriba";
+    text-align: left;
+    justify-content: center;
+}
+
+.nredes {
+    grid-area: nredes;
+
+}
+
+.direc {
+    grid-area: direc;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.hora {
+    grid-area: hora;
+
+}
+
+.volverarriba {
+    grid-area: volverarriba;
+    text-align: center;
+}
+
+
+.footertittles {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+ul {
+    padding-inline-start: 0px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 5px;
+}
+
+.iconface,
+.iconig,
+.iconwpp,
+.telfijo {
+    height: 20px;
+    width: 20px;
+}
+
+.mecanica,
+.suspension,
+.frenos,
+.radiadores,
+.luces,
+.accycomp {
+
+    height: 200px;
+    width: 250px;
+}
+
+
+.logoprinc {
+    height: 100px;
+}
+
+main {
+    text-align: center;
+}
+
+/**Carousel**/
+
+
+
+/***Titulos***/
+
+header div {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    padding-left: 10px;
+    padding-right: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.titulosportada {
+    padding-right: 400px;
+}
+
+
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.borderlist {
+    border-radius: 10px;
+    box-shadow: 3px 2px 5px 0px black;
+    font-style: oblique;
+    font-weight: 600;
+    text-align: center;
+}
+
+/***fondo***/
+
+main div section {
+    background-image: url(../images/vento.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    background-position: right;
+    margin-bottom: 100px;
+}
+
+
+
+/** main **/
+
+#portada {
+    padding-right: 400px;
+}
+
+#portada1 {
+    padding-top: 0;
+    font-size: 2rem;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+main section p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.elboton {
+    text-align: center;
+    padding-right: 400px;
+
+
+}
+
+.boton {
+    background-color: orange;
+
+    block-size: 60px;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.botonel {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+
+/**productos**/
+
+section ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.listaproductos {
+    padding-left: 50px;
+    padding-right: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tituloproduct {
+    padding-right: 400px;
+}
+
+/**Preguntas y respuestas**/
+
+.pyr {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-right: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.titulopreguntas {
+    padding-right: 400px;
+}
+
+
+#listapyr {
+    font-size: 1.5rem;
+
+}
+
+/**contacto**/
+
+.portada2 {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 400px;
+}
+
+.titulocontacto {
+
+    padding-right: 400px;
+}
+
+.mail {
+    width: 185px
+}
+
+/**Nosotros**/
+
+.portada3 {
+    padding-right: 400px;
+    padding-left: 50px;
+}
+
+
+/*tablet 1000px*/
+
+@media screen and (max-width: 1024px) {
+
+
+    h1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    h2 {
+        font-size: 3rem
+    }
+
+    #portada {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 210px;
+        grid-template-areas:
+            "nredes hora"
+            "volverarriba volverarriba";
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact,
+    .direc {
+        content-visibility: hidden;
+    }
+
+    #titulosportada {
+        padding-left: 0px;
+    }
+
+    .carousel-inner {
+
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 3rem
+    }
+
+    .carousel-inner {
+
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
+
+
+}
+
+/*Movil 425px*/
+
+@media screen and (max-width: 425px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .titulosportada {
+        content-visibility: hidden;
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 300px;
+    }
+
+    .tituloproduct,
+    .portada2,
+    .portada3,
+    .pyr,
+    .listaproductos,
+    .titulopreguntas,
+    .titulocontacto,
+    .contactosec,
+    .sectionpyr {
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        background-image: none;
+
+    }
+
+    .titulopreguntas {
+        font-size: 2rem;
+    }
+
+    main div section {
+        padding-top: 0px;
+    }
+
+    #portada1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1vh;
+        margin-bottom: 20px;
+    }
+
+    #portada,
+    .elboton {
+        content-visibility: hidden;
+    }
+
+    .carousel-inner {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
+}

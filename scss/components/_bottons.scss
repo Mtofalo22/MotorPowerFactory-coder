@@ -1,0 +1,29 @@
+.elboton {
+    text-align: center;
+    padding-right: 400px;
+
+
+}
+
+.boton {
+    background-color: rgb(255, 177, 60);
+    block-size: 60px;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.botonel {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .elboton {
+        content-visibility: hidden;
+    }
+}

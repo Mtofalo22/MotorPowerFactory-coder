@@ -1,0 +1,42 @@
+section {
+    ul {
+        li {
+        display: inline-block;
+        margin: 20px;
+    }
+}
+}
+
+.listaproductos {
+    padding-left: 50px;
+    padding-right: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tituloproduct {
+    padding-right: 400px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .tituloproduct,
+    .portada2,
+    .portada3,
+    .pyr,
+    .listaproductos,
+    .titulopreguntas,
+    .titulocontacto,
+    .contactosec,
+    .sectionpyr {
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        background-image: none;
+    }
+}
