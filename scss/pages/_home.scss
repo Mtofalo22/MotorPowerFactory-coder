@@ -65,6 +65,13 @@ main {
     justify-content: space-between;
 }
 
+
+@media screen and (max-width: 1024px) {
+    #portada {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 425px) {
 
     #portada1 {
@@ -78,26 +85,5 @@ main {
     #portada {
         content-visibility: hidden;
     }
-
-
-    .tituloproduct,
-    .portada2,
-    .portada3,
-    .pyr,
-    .listaproductos,
-    .titulopreguntas,
-    .titulocontacto,
-    .contactosec,
-    .sectionpyr {
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: justify;
-        align-items: center;
-        background-image: none;
-    }
-
-
+ 
 }

@@ -1,39 +1,30 @@
 .portada2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    padding-right: 400px;
+    @include flex (justify, center);
 }
 
 .titulocontacto {
     padding-right: 400px;
+    padding-left: 50px;
 }
 
 .mail {
     width: 185px;
 }
 
+@media screen and (max-width: 1024px) {
 
-@media screen and (max-width: 425px) {
-
-    .tituloproduct,
-    .portada2,
-    .portada3,
-    .pyr,
-    .listaproductos,
-    .titulopreguntas,
-    .titulocontacto,
-    .contactosec,
-    .sectionpyr {
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: justify;
-        align-items: center;
-        background-image: none;
+    .contact,
+    .direc {
+        content-visibility: hidden;
     }
 }
 
+
+@media screen and (max-width: 425px) {
+
+    .portada2,
+    .titulocontacto,
+    .contactosec {
+        @include titulos (30px)
+    }
+}

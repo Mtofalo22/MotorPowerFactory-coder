@@ -1,3 +1,5 @@
+
+
 main {
     text-align: center;
     a {
@@ -7,6 +9,25 @@ main {
         li {
             list-style-type: none;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    h1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    h2 {
+        font-size: 3rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 3rem
     }
 }
 

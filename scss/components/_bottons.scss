@@ -1,17 +1,17 @@
+
 .elboton {
     text-align: center;
     padding-right: 400px;
-
-
 }
 
 .boton {
-    background-color: rgb(255, 177, 60);
+    background-color: $color-primario;
     block-size: 60px;
     font-size: 2rem;
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    
 }
 
 .botonel {
@@ -19,6 +19,15 @@
     color: black;
     font-style: italic;
 
+}
+
+div {
+    button {
+        
+        @extend .botonel;
+        @extend .boton;
+
+    }
 }
 
 @media screen and (max-width: 425px) {

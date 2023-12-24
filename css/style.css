@@ -8,6 +8,20 @@ main ul li {
   list-style-type: none;
 }
 
+@media screen and (max-width: 1024px) {
+  h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 425px) {
   .titulosportada {
     content-visibility: hidden;
@@ -88,8 +102,8 @@ h3 {
   padding-right: 400px;
 }
 
-.boton {
-  background-color: rgb(255, 177, 60);
+.boton, div button {
+  background-color: #adb5bd;
   block-size: 60px;
   font-size: 2rem;
   margin: 10px;
@@ -97,7 +111,7 @@ h3 {
   border-radius: 10px;
 }
 
-.botonel {
+.botonel, div button {
   text-decoration: none;
   color: black;
   font-style: italic;
@@ -175,7 +189,7 @@ h3 {
 }
 .borderlist {
   border-radius: 15px;
-  box-shadow: 7px 3px 10px 1px black;
+  box-shadow: 7px 3px 10px 1px rgb(139, 139, 139);
   font-style: oblique;
   font-weight: 600;
   text-align: center;
@@ -216,7 +230,7 @@ header {
 }
 
 footer {
-  background-color: #aaaaa6;
+  background-color: #adb5bd;
   padding-left: 100px;
   padding-right: 100px;
   display: grid;
@@ -321,6 +335,11 @@ main section p {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1024px) {
+  #portada {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 425px) {
   #portada1 {
     display: flex;
@@ -332,40 +351,20 @@ main section p {
   #portada {
     content-visibility: hidden;
   }
-  .tituloproduct,
-  .portada2,
-  .portada3,
-  .pyr,
-  .listaproductos,
-  .titulopreguntas,
-  .titulocontacto,
-  .contactosec,
-  .sectionpyr {
-    padding-left: 25px;
-    padding-right: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-    background-image: none;
-  }
 }
 .portada3 {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  flex-direction: column;
   padding-right: 400px;
+  font-family: Arial, Helvetica, sans-serif;
   padding-left: 50px;
 }
 
 @media screen and (max-width: 425px) {
-  .tituloproduct,
-  .portada2,
-  .portada3,
-  .pyr,
-  .listaproductos,
-  .titulopreguntas,
-  .titulocontacto,
-  .contactosec,
-  .sectionpyr {
+  .portada3 {
+    padding-top: 60px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
@@ -395,14 +394,8 @@ section ul li {
 
 @media screen and (max-width: 425px) {
   .tituloproduct,
-  .portada2,
-  .portada3,
-  .pyr,
-  .listaproductos,
-  .titulopreguntas,
-  .titulocontacto,
-  .contactosec,
-  .sectionpyr {
+  .listaproductos {
+    padding-top: 70px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
@@ -415,6 +408,7 @@ section ul li {
 }
 .pyr {
   display: flex;
+  align-items: left;
   text-align: left;
   flex-direction: column;
   padding-right: 400px;
@@ -431,15 +425,10 @@ section ul li {
 }
 
 @media screen and (max-width: 425px) {
-  .tituloproduct,
-  .portada2,
-  .portada3,
   .pyr,
-  .listaproductos,
   .titulopreguntas,
-  .titulocontacto,
-  .contactosec,
   .sectionpyr {
+    padding-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;
@@ -452,29 +441,34 @@ section ul li {
 }
 .portada2 {
   display: flex;
+  align-items: center;
+  text-align: justify;
   flex-direction: column;
-  text-align: center;
   padding-right: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 50px;
 }
 
 .titulocontacto {
   padding-right: 400px;
+  padding-left: 50px;
 }
 
 .mail {
   width: 185px;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact,
+  .direc {
+    content-visibility: hidden;
+  }
+}
 @media screen and (max-width: 425px) {
-  .tituloproduct,
   .portada2,
-  .portada3,
-  .pyr,
-  .listaproductos,
-  .titulopreguntas,
   .titulocontacto,
-  .contactosec,
-  .sectionpyr {
+  .contactosec {
+    padding-top: 30px;
     padding-left: 25px;
     padding-right: 25px;
     display: flex;

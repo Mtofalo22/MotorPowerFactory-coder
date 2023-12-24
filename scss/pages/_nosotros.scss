@@ -1,25 +1,12 @@
+
 .portada3 {
-    padding-right: 400px;
-    padding-left: 50px;
+    @include flex (justify, center)
+
 }
+
 @media screen and (max-width: 425px) {
 
-    .tituloproduct,
-    .portada2,
-    .portada3,
-    .pyr,
-    .listaproductos,
-    .titulopreguntas,
-    .titulocontacto,
-    .contactosec,
-    .sectionpyr {
-        padding-left: 25px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: justify;
-        align-items: center;
-        background-image: none;
+    .portada3 {
+        @include titulos (60px)
     }
 }
