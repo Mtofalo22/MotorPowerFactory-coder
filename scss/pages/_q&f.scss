@@ -1,9 +1,9 @@
 .pyr {
-    @include flex (left, left)
+    @include flex (left, left);
 }
 
 .titulopreguntas {
-    padding-right: 400px;
+    @include flex (center, justify);
 }
 
 #listapyr {

@@ -1,5 +1,4 @@
 .carousel-inner {
-
     padding-left: 35%;
     padding-right: 35%;
 }
@@ -12,14 +11,12 @@
 .admision,
 .led,
 .disco {
-
     height: 500px;
     width: 200px;
 }
 
 @media screen and (max-width: 1024px) {
     .carousel-inner {
-
         padding-left: 300px;
         padding-right: 300px;
     }
@@ -32,7 +29,6 @@
     .admision,
     .led,
     .disco {
-
         height: 500px;
         width: 200px;
     }
@@ -41,7 +37,6 @@
 @media screen and (max-width: 768px) {
 
     .carousel-inner {
-
         padding-left: 200px;
         padding-right: 200px;
     }
@@ -54,7 +49,6 @@
     .admision,
     .led,
     .disco {
-
         height: 500px;
         width: 200px;
     }
@@ -62,22 +56,20 @@
 
 @media screen and (max-width: 425px) {
 
-.carousel-inner {
+    .carousel-inner {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
 
-.carousel-caption {
-    font-style: italic;
-    color: black;
-}
-
-.admision,
-.led,
-.disco {
-
-    height: 500px;
-    width: 200px;
-}
+    .admision,
+    .led,
+    .disco {
+        height: 500px;
+        width: 200px;
+    }
 }

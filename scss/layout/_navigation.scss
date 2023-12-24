@@ -1,12 +1,30 @@
+.navbar {
+    background-color: $color-primario;
+}
 
+nav {
+    ul {
+        font-size: 20px;
 
+    }
+}
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 90px;
     padding-left: 10px;
+
 }
+
 .logoprinc {
     height: 100px;
 }
 
+@media screen and (max-width: 768px) {
 
+    nav {
+        ul {
+            font-size: 15px;
+        }
+    }
+
+}

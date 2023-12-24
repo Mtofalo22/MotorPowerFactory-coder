@@ -2,12 +2,13 @@
 .elboton {
     text-align: center;
     padding-right: 400px;
+    @include flex (center, center)
 }
 
 .boton {
     background-color: $color-primario;
-    block-size: 60px;
-    font-size: 2rem;
+    block-size: 40px;
+    font-size: 1.2rem;
     margin: 10px;
     text-align: center;
     border-radius: 10px;

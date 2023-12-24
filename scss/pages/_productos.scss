@@ -8,9 +8,9 @@ section {
 }
 
 .listaproductos {
-    padding-left: 50px;
-    padding-right: 400px;
-    display: flex;
+
+    @include flex (center, center);
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }

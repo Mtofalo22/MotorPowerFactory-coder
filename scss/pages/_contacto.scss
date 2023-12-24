@@ -1,15 +1,19 @@
-.portada2 {
-    @include flex (justify, center);
+.portada2, 
+.titulocontacto{
+    @include flex (center, justify);
 }
 
-.titulocontacto {
-    padding-right: 400px;
-    padding-left: 50px;
-}
 
 .mail {
-    width: 185px;
+    
+    width: 220px;
 }
+
+#txtboxMultiline {
+    width: 300px;
+}
+
+form {align-items: center;}
 
 @media screen and (max-width: 1024px) {
 

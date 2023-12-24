@@ -12,8 +12,8 @@ main {
 
 #portada {
 
-    padding-right: 400px;
-    padding-left: 20px;
+    
+    @include flex(center, justify);
     animation-duration: 2s;
     animation-name: slidein;
 
@@ -33,7 +33,7 @@ main {
 
 #portada1 {
     padding-top: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 10px;
     text-align: justify;
 }
