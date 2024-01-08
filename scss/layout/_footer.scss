@@ -1,4 +1,3 @@
-
 footer {
     background-color: $color-secundario;
     padding-left: 100px;
@@ -60,4 +59,26 @@ ul {
     .direc {
         content-visibility: hidden;
     }
+}
+
+
+@media screen and (max-width: 375px) {
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            padding-left: 0px;
+        }
+
+    }
+
+
+
 }

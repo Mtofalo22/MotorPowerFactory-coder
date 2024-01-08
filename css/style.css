@@ -302,6 +302,19 @@ ul li {
     content-visibility: hidden;
   }
 }
+@media screen and (max-width: 375px) {
+  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul {
+    padding-left: 0px;
+  }
+}
 main div section {
   background-image: url(../images/vento.jpg);
   background-repeat: no-repeat;
