@@ -1,0 +1,13 @@
+
+
+.portada3 {
+    @include flex (justify, center)
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .portada3 {
+        @include titulos (60px)
+    }
+}

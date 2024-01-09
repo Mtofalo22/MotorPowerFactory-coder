@@ -1,0 +1,21 @@
+.pyr {
+    @include flex (left, left);
+}
+
+.titulopreguntas {
+    @include flex (center, justify);
+}
+
+#listapyr {
+    font-size: 1.5rem;
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .pyr,
+    .titulopreguntas,
+    .sectionpyr {
+        @include titulos (40px)
+    }
+}

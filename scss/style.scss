@@ -1,0 +1,36 @@
+
+
+// abstracts //
+
+@import "../scss/abstracts/mixins";
+@import "../scss/abstracts/vars";
+
+
+// Base //
+
+@import "../scss/base/reset";
+@import "../scss/base/typography";
+
+// Components //
+
+@import "../scss/components/bottons";
+@import "../scss/components/carousel";
+@import "../scss/components/cards";
+
+// Layaout //
+@import "../scss/layout/navigation";
+@import "../scss/layout/grid";
+@import "../scss/layout/header";
+@import "../scss/layout/footer";
+
+// Pages //
+
+@import "../scss/pages/home";
+@import "../scss/pages/nosotros";
+@import "../scss/pages/productos";
+@import "../scss/pages/q&f";
+@import "../scss/pages/contacto";
+
+// vendors //
+
+@import "../scss/vendors/bootstrap"

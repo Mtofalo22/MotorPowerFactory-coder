@@ -1,10 +1,10 @@
 header {
-    background-color: #aaaaa6;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    padding-top: 150px;
+}
 
+.navbar-brand {
+    font-size: 30px;
+    padding-left: 10px;
 }
 
 body {
@@ -60,6 +60,8 @@ footer {
     font-weight: 600;
 }
 
+
+
 ul {
     padding-inline-start: 0px;
 }
@@ -82,24 +84,13 @@ ul li {
 .suspension,
 .frenos,
 .radiadores,
-.luces {
+.luces,
+.accycomp {
 
     height: 200px;
     width: 250px;
 }
 
-.accycomp {
-    height: 200px;
-    width: 265px;
-}
-
-.admision,
-.led,
-.disco {
-
-    height: 200px;
-    width: 200px;
-}
 
 .logoprinc {
     height: 100px;
@@ -108,6 +99,10 @@ ul li {
 main {
     text-align: center;
 }
+
+/**Carousel**/
+
+
 
 /***Titulos***/
 
@@ -124,8 +119,9 @@ h1 {
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
+    font-size: 4rem;
 }
 
 .titulosportada {
@@ -147,38 +143,26 @@ a {
 .borderlist {
     border-radius: 10px;
     box-shadow: 3px 2px 5px 0px black;
+    font-style: oblique;
+    font-weight: 600;
+    text-align: center;
 }
 
 /***fondo***/
 
 main div section {
+<<<<<<< HEAD:Css/style.css
     background-image: url(../imagess/Vento.jpg);
+=======
+    background-image: url(../images/vento.jpg);
+>>>>>>> boostrap:css/backup.css
     background-repeat: no-repeat;
     background-size: 400px 300px;
     background-position: right;
     margin-bottom: 100px;
 }
 
-/**Navegador**/
 
-header nav ul li {
-
-    display: inline-block;
-    margin: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-
-}
 
 /** main **/
 
@@ -236,6 +220,7 @@ section ul li {
 }
 
 .listaproductos {
+    padding-left: 50px;
     padding-right: 400px;
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +239,7 @@ section ul li {
     flex-direction: column;
     padding-right: 400px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
 }
 
 .titulopreguntas {
@@ -290,22 +276,22 @@ section ul li {
 
 .portada3 {
     padding-right: 400px;
+    padding-left: 50px;
 }
 
 
 /*tablet 1000px*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     h1 {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    h2 {
+        font-size: 3rem
     }
 
     #portada {
@@ -333,16 +319,67 @@ section ul li {
     #titulosportada {
         padding-left: 0px;
     }
+
+    .carousel-inner {
+
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 3rem
+    }
+
+    .carousel-inner {
+
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
+
+
 }
 
 /*Movil 425px*/
 
-@media screen and (max-width: 452px) {
+@media screen and (max-width: 425px) {
 
-    nav ul {
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
+    h2 {
+        font-size: 2.5rem;
     }
 
     .titulosportada {
@@ -361,8 +398,8 @@ section ul li {
     .titulocontacto,
     .contactosec,
     .sectionpyr {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -370,6 +407,10 @@ section ul li {
         align-items: center;
         background-image: none;
 
+    }
+
+    .titulopreguntas {
+        font-size: 2rem;
     }
 
     main div section {
@@ -388,4 +429,25 @@ section ul li {
     .elboton {
         content-visibility: hidden;
     }
+
+    .carousel-inner {
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .carousel-caption {
+        font-style: italic;
+        color: black;
+    }
+
+    .admision,
+    .led,
+    .disco {
+
+        height: 500px;
+        width: 200px;
+    }
+
+
 }

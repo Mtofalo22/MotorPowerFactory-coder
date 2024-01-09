@@ -1,0 +1,28 @@
+section {
+    ul {
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+    }
+}
+
+.listaproductos {
+
+    @include flex (center, center);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tituloproduct {
+    padding-right: 400px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .tituloproduct,
+    .listaproductos {
+        @include titulos (70px)
+    }
+}
