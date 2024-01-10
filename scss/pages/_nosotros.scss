@@ -1,13 +1,38 @@
-
-
 .portada3 {
     @include flex (justify, center)
-
 }
+
+
+@media screen and (max-width: 577px) {
+
+    .portada3 {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 300px;
+    }
+
+    main {
+        div {
+            section {
+                background-image: url(../images/vento.jpg);
+                background-repeat: no-repeat;
+                background-size: 400px 300px;
+                background-position: top;
+                margin-bottom: 200px;
+            }
+        }
+    }
+}
+
+
+
 
 @media screen and (max-width: 425px) {
 
     .portada3 {
         @include titulos (75px)
     }
+
+
+    
 }
