@@ -25,10 +25,10 @@ main ul li {
 }
 @media screen and (max-width: 425px) {
   .titulosportada {
-    content-visibility: hidden;
+    padding-top: 45px;
     font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: 300px;
+    margin-top: 30px;
+    margin-bottom: 100px;
   }
   #portada1 {
     display: flex;
@@ -39,9 +39,6 @@ main ul li {
   }
   main div section {
     padding-top: 0px;
-  }
-  #portada {
-    content-visibility: hidden;
   }
 }
 body {
@@ -90,6 +87,14 @@ h3, .h3 {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 577px) {
+  .titulosportada {
+    padding-right: 0px;
+  }
+  #portada {
+    padding-right: 0px;
+  }
+}
 @media screen and (max-width: 425px) {
   h2, .h2 {
     font-size: 2.5rem;
@@ -125,6 +130,13 @@ h3, .h3 {
   font-style: italic;
 }
 
+@media screen and (max-width: 577px) {
+  .elboton {
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
 @media screen and (max-width: 425px) {
   .elboton {
     content-visibility: hidden;
@@ -191,7 +203,7 @@ h3, .h3 {
   .admision,
   .led,
   .disco {
-    height: 500px;
+    height: 300px;
     width: 200px;
   }
 }
@@ -201,6 +213,7 @@ h3, .h3 {
   font-style: oblique;
   font-weight: 600;
   text-align: center;
+  padding-left: 0px;
 }
 
 .navbar {
@@ -223,6 +236,10 @@ nav ul {
 @media screen and (max-width: 768px) {
   nav ul {
     font-size: 15px;
+  }
+  .navbar-brand {
+    font-size: 90px;
+    padding-left: 0px;
   }
 }
 .nredes {
@@ -375,20 +392,35 @@ main section p {
 }
 
 @media screen and (max-width: 1024px) {
+  ul {
+    padding-left: 0px;
+  }
   #portada {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 577px) {
+  #portada {
+    padding-right: 50px;
+    padding-top: 400px;
+  }
+  main div section {
+    background-image: url(../images/vento.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    background-position: center;
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 429px) {
+  ul {
+    padding-left: 0px;
+  }
   #portada1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1vh;
     margin-bottom: 20px;
-  }
-  #portada {
-    content-visibility: hidden;
   }
 }
 .portada3 {
@@ -403,9 +435,9 @@ main section p {
 
 @media screen and (max-width: 425px) {
   .portada3 {
-    padding-top: 60px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -439,9 +471,9 @@ section ul li {
 @media screen and (max-width: 425px) {
   .tituloproduct,
   .listaproductos {
-    padding-top: 70px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,8 +511,8 @@ section ul li {
   .titulopreguntas,
   .sectionpyr {
     padding-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -523,8 +555,8 @@ form {
   .titulocontacto,
   .contactosec {
     padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
