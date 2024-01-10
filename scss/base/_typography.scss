@@ -57,7 +57,14 @@ h3 {
     }
 
 }
+@media screen and (max-width: 577px) {
+    .titulosportada {
+        padding-right: 0px;
+    }
+    
+    #portada {padding-right: 0px;}
 
+}
 @media screen and (max-width: 425px) {
 
     h2 {
