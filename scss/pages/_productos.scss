@@ -18,33 +18,43 @@ section {
 .tituloproduct {
     padding-right: 400px;
 }
+
 @media screen and (max-width: 577px) {
 
     .tituloproduct {
         padding-right: 50px;
         padding-left: 50px;
         padding-top: 300px;
-        padding-right: 0px;
     }
+
+    .listaproductos {
+        padding-right: 50px;
+        padding-left: 50px;
+        justify-content: center;
+    }
+
    
+
 }
+
 @media screen and (max-width: 425px) {
+
     .tituloproduct,
     .listaproductos {
         @include titulos (80px);
-        
-        padding-right:0px;
-        
+
+        padding-right: 0px;
+
     }
 
     .tituloproduct {
         padding-right: 20px;
         padding-left: 20px;
         padding-top: 300px;
-        
+
     }
-   
-    
-        
-    
+
+
+
+
 }

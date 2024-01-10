@@ -506,7 +506,11 @@ section ul li {
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 300px;
-    padding-right: 0px;
+  }
+  .listaproductos {
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 425px) {
@@ -553,6 +557,14 @@ section ul li {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 577px) {
+  .titulopreguntas,
+  .pyr {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 300px;
+  }
+}
 @media screen and (max-width: 425px) {
   .pyr,
   .titulopreguntas,
@@ -595,6 +607,18 @@ form {
   .contact,
   .direc {
     content-visibility: hidden;
+  }
+}
+@media screen and (max-width: 577px) {
+  .titulocontacto {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 300px;
+  }
+  .portada2 {
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 425px) {

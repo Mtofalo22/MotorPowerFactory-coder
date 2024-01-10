@@ -10,7 +10,17 @@
     font-size: 1.5rem;
 
 }
+@media screen and (max-width: 577px) {
 
+    .titulopreguntas,
+    .pyr {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 300px;
+        
+    }
+   
+}
 @media screen and (max-width: 425px) {
 
     .pyr,

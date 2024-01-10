@@ -1,11 +1,11 @@
-.portada2, 
-.titulocontacto{
+.portada2,
+.titulocontacto {
     @include flex (center, justify);
 }
 
 
 .mail {
-    
+
     width: 220px;
 }
 
@@ -13,7 +13,9 @@
     width: 300px;
 }
 
-form {align-items: center;}
+form {
+    align-items: center;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -23,12 +25,30 @@ form {align-items: center;}
     }
 }
 
+@media screen and (max-width: 577px) {
+
+    .titulocontacto {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 300px;
+    }
+
+    .portada2 {
+        padding-right: 50px;
+        padding-left: 50px;
+        justify-content: center;
+    }
+
+
+
+}
 
 @media screen and (max-width: 425px) {
 
     .portada2,
     .titulocontacto,
     .contactosec {
-        @include titulos (30px)
+        @include titulos (30px);
+
     }
 }
