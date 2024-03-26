@@ -1,0 +1,14 @@
+[
+  { "id": 1, "nombre": "Admisión", "precio": 15000 },
+  { "id": 2, "nombre": "Alternador", "precio": 150000 },
+  { "id": 3, "nombre": "Amortiguadores", "precio": 100000 },
+  { "id": 4, "nombre": "Bobina", "precio": 25000 },
+  { "id": 5, "nombre": "Bobina Individual", "precio": 22000 },
+  { "id": 6, "nombre": "Cree LED", "precio": 8000 },
+  { "id": 7, "nombre": "Disco de Freno", "precio": 60000 },
+  { "id": 8, "nombre": "Intercooler", "precio": 180000 },
+  { "id": 9, "nombre": "Parrilla de Suspensión", "precio": 37000 },
+  { "id": 10, "nombre": "Pastillas de Freno", "precio": 18000 },
+  { "id": 11, "nombre": "Radiador", "precio": 90000 },
+  { "id": 12, "nombre": "Turbo Garrett", "precio": 300000 }
+]
