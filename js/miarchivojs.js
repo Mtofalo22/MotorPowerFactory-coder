@@ -53,6 +53,22 @@ const convertirNombreAImagen = (nombreProducto) => {
 // Función para agregar un producto al carrito
 function agregarAlCarrito(id, cantidad) {
   console.log(`Agregando producto ${id} al carrito con cantidad ${cantidad}...`);
+
+  // Validar que la cantidad sea un número válido y mayor a 0
+  if (isNaN(cantidad) || cantidad <= 0) {
+    console.error("La cantidad ingresada no es válida.");
+    Toastify({
+      text: "La cantidad ingresada no es válida. Por favor ingresa un número mayor a 0.",
+      duration: 3000,
+      gravity: "bottom",
+      position: "right",
+      style: {
+        background: "#dc3545"
+      }
+    }).showToast();
+    return;
+  }
+
   const productoEnCarrito = carrito.find(producto => producto.id === id);
   if (productoEnCarrito) {
     productoEnCarrito.cantidad += cantidad;
@@ -70,7 +86,7 @@ function agregarAlCarrito(id, cantidad) {
     gravity: "bottom",
     position: "right",
     style: {
-      background: "#6c757d" // Color de fondo
+      background: "#6c757d" 
     }
   }).showToast();
 }
